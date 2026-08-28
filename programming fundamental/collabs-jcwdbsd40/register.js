@@ -1,0 +1,5 @@
+console.log('Input your username')
+console.log('Input your email')
+console.log('Input your password')
+console.log('Input your phone number')
+console.log('Input your Birthdate')

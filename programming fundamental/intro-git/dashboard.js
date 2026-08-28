@@ -1,0 +1,2 @@
+const uploadProduct = "";
+const uploadImage = "";
