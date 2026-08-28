@@ -1,0 +1,12 @@
+<script>
+  let totalHari = parseInt(
+    prompt("input ratusan hari, untuk dijadiin tahun,bulan,hari"),
+  );
+  let totalTahun = Math.floor(totalHari / 365);
+  let totalBulan = Math.floor((totalHari % 365) / 30);
+  let hari = (totalHari % 365) % 30;
+
+  alert(
+    `${totalHari} hari = ${totalTahun} tahun, ${totalBulan} bulan, dan ${hari} hari `,
+  );
+</script>
