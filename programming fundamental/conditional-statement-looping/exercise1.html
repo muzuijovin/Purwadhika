@@ -1,0 +1,23 @@
+<script>
+  let firstOperant = parseInt(prompt('input angka pertama'))
+  let secondOperant = parseInt(prompt('input angka kedua'))
+  let operator = prompt('choose operational (+,-,*,/)')
+  
+  switch (operator) {
+    case '+': 
+      alert(firstOperant + secondOperant)
+      break;
+    case '-': 
+      alert(firstOperant - secondOperant)
+      break;
+    case '*': 
+      alert(firstOperant * secondOperant)
+      break;
+    case '/': 
+      alert(firstOperant / secondOperant)
+      break;
+    default:
+      alert('WRONG INPUT')
+      break;
+  }
+</script>
