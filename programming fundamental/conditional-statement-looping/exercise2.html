@@ -1,0 +1,43 @@
+<script>
+  do {
+    var firstOperant = parseInt(prompt("input angka pertama"));
+    if (isNaN(firstOperant)) {
+      alert("invalid input, please input number only!");
+    }
+  } while (isNaN(firstOperant)); //nuglang ketika input prompt bukan number
+
+  do {
+    var secondOperant = parseInt(prompt("input angka kedua"));
+    if (isNaN(secondOperant)) {
+      alert("invalid input, please input number only!");
+    }
+  } while (isNaN(secondOperant));
+
+  do {
+    var operator = prompt("choose operational (+,-,*,/)");
+
+    if (
+      operator != "+" &&
+      operator != "-" &&
+      operator != "*" &&
+      operator != "/"
+    ) {
+      alert("invalid input, please repeat!");
+    }
+  } while (
+    operator != "+" &&
+    operator != "-" &&
+    operator != "*" &&
+    operator != "/"
+  );
+
+  if (operator === "+") {
+    alert(firstOperant + secondOperant);
+  } else if (operator === "-") {
+    alert(firstOperant - secondOperant);
+  } else if (operator === "*") {
+    alert(firstOperant * secondOperant);
+  } else if (operator === "/") {
+    alert(firstOperant / secondOperant);
+  }
+</script>
