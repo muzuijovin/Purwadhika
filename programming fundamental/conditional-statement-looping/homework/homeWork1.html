@@ -1,0 +1,18 @@
+<script>
+  //1. Write a code to check whether the number is odd or even
+  do {
+    var codeCheck = parseInt(
+      prompt("Write a code to check whether the number is odd or even"),
+    );
+
+    if (isNaN(codeCheck)) {
+      alert("invalid input, please input number only!");
+    }
+  } while (isNaN(codeCheck));
+
+  if (codeCheck % 2 === 0) {
+    alert("genap");
+  } else {
+    alert("ganjil");
+  }
+</script>

@@ -1,0 +1,22 @@
+<script>
+/* 
+4. Write a code to find factorial of a number
+○ Example: 4! → 4 x 3 x 2 x 1 = 24
+○ Example: 6! → 6 x 5 x 4 x 3 x 2 x 1 = 720  
+*/
+do {
+    var sumNumber = parseInt(
+      prompt("Write a code to find factorial of a number"),
+    );
+    if (isNaN(sumNumber)) {
+      alert("invalid input, please input number only!");
+    }
+  } while (isNaN(sumNumber));
+
+  let total = 1;
+  for (let i = 1; i <= sumNumber; i++) {
+    total *= i;
+  }
+
+  alert(`perkalian dari 1 ke ${sumNumber} = ${total}`);
+</script>
