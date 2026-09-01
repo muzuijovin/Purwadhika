@@ -1,0 +1,31 @@
+<script>
+  //2. Write a code to check whether the number is prime number or not
+  do {
+    var angka = parseInt(
+      prompt("Write a code to check whether the number is prime number or not"),
+    ); // ganti angka yang mau dicek
+
+    if (isNaN(codeCheck)) {
+      alert("invalid input, please input number only!");
+    }
+  } while (isNaN(angka));
+
+  let isPrima = true;
+
+  if (angka < 2) {
+    isPrima = false;
+  } else {
+    for (let i = 2; i <= Math.sqrt(angka); i++) {
+      if (angka % i === 0) {
+        isPrima = false;
+        break; // langsung berhenti kalau sudah ketemu pembagi
+      }
+    }
+  }
+
+  if (isPrima) {
+    alert(angka + " adalah bilangan prima");
+  } else {
+    angka + " bukan bilangan prima";
+  }
+</script>

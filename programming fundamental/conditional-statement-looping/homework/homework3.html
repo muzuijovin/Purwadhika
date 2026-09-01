@@ -1,0 +1,18 @@
+<script>
+  //3. Write a code to find the sum of the numbers 1 to N
+  do {
+    var sumNumber = parseInt(
+      prompt("Write a code to find the sum of the numbers 1 to N"),
+    );
+    if (isNaN(sumNumber)) {
+      alert("invalid input, please input number only!");
+    }
+  } while (isNaN(sumNumber));
+
+  let total = 1;
+  for (let i = 1; i <= sumNumber; i++) {
+    total += i;
+  }
+
+  alert(`jumlah dari 1 ke ${sumNumber} = ${total}`);
+</script>

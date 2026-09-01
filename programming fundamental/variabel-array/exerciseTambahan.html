@@ -1,0 +1,25 @@
+<script>
+  const productName = ["Indomie Goreng", "Pepsodent", "Cheetos"];
+  const productPrice = [3100, 19000, 11000];
+  const productStock = [200, 130, 300];
+
+  let printProduct = ``;
+  productName.forEach((values, index) => {
+    printProduct += `${index + 1}. ${values} \n`;
+  });
+  do {
+    var inputNumber = parseInt(
+      prompt(
+        `Product Found \n ${printProduct} \n Masukan Nomor Produk untuk melihat detial produk: `,
+      ),
+    );
+
+    if (inputNumber > 3 || isNaN(inputNumber)) {
+      alert("input invalid, tolong masukkan angka yang tersedia");
+    }
+  } while (inputNumber > 3 || isNaN(inputNumber));
+
+  alert(
+    `Product Found! \n ${productName[inputNumber - 1]}: Rp ${productPrice[inputNumber - 1]} (stock: ${productStock[inputNumber - 1]})`,
+  );
+</script>
