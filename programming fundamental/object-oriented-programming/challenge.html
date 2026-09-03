@@ -1,0 +1,41 @@
+<script>
+  const product = [
+    {
+      name: "Indomie Goreng",
+      price: 3100,
+      stocks: 100,
+    },
+    {
+      name: "Pepsodent Herbal",
+      price: 19000,
+      stocks: 50,
+    },
+    {
+      name: "Ultra Milk",
+      price: 21000,
+      stocks: 150,
+    },
+  ];
+
+  let printProduct = ``;
+
+  product.forEach((value, index) => {
+    printProduct += `${index + 1}. ${value?.name} \n`;
+  });
+
+  do {
+    var inputNumber = parseInt(
+      prompt(`List Product \n\n ${printProduct} \n Masukkan Nomor Produk:`),
+    );
+
+    if (isNaN(inputNumber) || inputNumber > 3 || inputNumber < 1) {
+      alert("input invalid, please input nomor of product!");
+    }
+  } while (isNaN(inputNumber) || inputNumber > 3 || inputNumber < 1);
+
+  const selectedProduct = product[inputNumber - 1];
+
+  alert(
+    `Product Found! \n ${selectedProduct.name}: Rp ${selectedProduct.price} (stock: ${selectedProduct.stocks})`,
+  );
+</script>
