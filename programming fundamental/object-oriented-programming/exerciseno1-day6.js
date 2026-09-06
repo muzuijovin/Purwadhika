@@ -18,34 +18,57 @@ Create a function to calculate array of student data
 ● Average
 */
 
-// class Student {
-//   name = "";
-//   email = "";
-//   age = "";
-//   score = "";
-//   constructor(name, email, age, score) {
-//     this.name = name;
-//     this.email = email;
-//     this.age = age;
-//     this.score = score;
-//   }
+class Student {
+  name = "";
+  email = "";
+  age = "";
+  score = "";
+  constructor(name, email, age, score) {
+    this.name = name;
+    this.email = email;
+    this.age = age;
+    this.score = score;
+  }
 
-//   get convertAge() {
-//     return (new Date() - new Date(this?.age))/(1000 * 60 * 60 * 60 * 24)
-//   }
-// }
+  get convertAge() {
+    return new Date().getFullYear() - new Date(this?.age).getFullYear();
+  }
+}
 
-// const students = [
-//   new Student("Jovin Najwan", "jovin.najwan@gmail.com", "2003-06-15", 80),
-//   new Student("Budi", "budi@gmail.com", "2002-06-15", 90),
-//   new Student("Andi", "andi@gmail.com", "2001-02-15", 80)
-// ];
+const students = [
+  new Student("Jovin Najwan", "jovin.najwan@gmail.com", "2003-06-15", 80),
+  new Student("Budi", "budi@gmail.com", "2002-06-15", 90),
+  new Student("Andi", "andi@gmail.com", "2001-02-15", 80),
+];
 
-// calculate(_student) {
-//     const sortedStudentAge = _student.sort((a,b) => a.age - b.age);
-//     const averageStudentAge = _student.reduce((acc, item) => acc + item.age, 0);
-//   }
+function calculate(_student) {
+  const sortedStudentAge = _student.sort((a, b) => a.convertAge - b.convertAge);
+  const averageStudentAge = _student.reduce(
+    (acc, item) => acc + item?.convertAge,
+    0,
+  );
 
+  const sortedStudentScore = _student.sort((a, b) => a.score - b.score);
+  const averageStudentScore = _student.reduce(
+    (acc, item) => acc + item.score,
+    0,
+  );
+
+  return {
+    score: {
+      highest: sortedStudentScore[sortedStudentScore.length - 1],
+      lowest: sortedStudentScore[0],
+      average: averageStudentScore / sortedStudentScore.length,
+    },
+    age: {
+      highest: sortedStudentAge[sortedStudentScore.length - 1],
+      lowest: sortedStudentScore[0],
+      average: averageStudentAge / sortedStudentScore.length,
+    },
+  };
+}
+
+console.log(calculate(students));
 
 // const students = [
 //   {
@@ -67,30 +90,3 @@ Create a function to calculate array of student data
 //     score: 90,
 //   },
 // ];
-
-// function calculateStudentDatas(students) {
-//   const scores = students.map((values) => values.score).sort((a, b) => a - b);
-//   const ages = students.map((values) => values.age).sort((a, b) => a - b);
-
-//   // scores.sort((a, b) => a - b);
-//   // ages.sort((a, b) => a - b);
-
-//   const scoreAverange =
-//     scores.reduce((total, score) => total + score, 0) / scores.length;
-//   const ageAverange = ages.reduce((total, age) => total + age, 0) / ages.length;
-
-//   return {
-//     score: {
-//       highest: scores[scores.length - 1],
-//       lowest: scores[0],
-//       averange: scoreAverange,
-//     },
-//     age: {
-//       highest: ages[ages.length - 1],
-//       lowest: ages[0],
-//       averange: ageAverange,
-//     },
-//   };
-// }
-
-// console.log(calculateStudentDatas(students));
