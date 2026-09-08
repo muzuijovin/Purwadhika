@@ -69,4 +69,5 @@ const userr: userNew[] = [
   },
 ];
 
+
 //diskusi algoritma dan data structure. buat materi and di presentasikan!! --> membahas tentang algorithm
