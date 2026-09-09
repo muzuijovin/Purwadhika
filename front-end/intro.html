@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intro HTML</title>
+  </head>
+  <body>
+    <!-- header tags -->
+    <h1>Purwadhika</h1>
+    <h2>Purwadhika</h2>
+    <h3>Purwadhika</h3>
+    <h4>Purwadhika</h4>
+    <h5>Purwadhika</h5>
+    <h6>Purwadhika</h6>
+
+    <!-- paragraf, break(untuk enter), comment -->
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat
+      perferendis aperiam adipisci libero animi quia modi laboriosam inventore,
+      iusto facere error repellat quas provident sit enim ratione voluptas
+      similique consectetur.
+    </p>
+
+    <p>
+      Lorem <br />
+      ipsum dolor sit amet consectetur, adipisicing elit. Placeat perferendis
+      aperiam adipisci libero animi quia modi laboriosam inventore, iusto facere
+      error repellat quas provident sit enim ratione voluptas similique
+      consectetur.
+    </p>
+
+    <!-- text formatting -->
+    <b>bold</b>
+    <i>italic</i>
+    <u>underlined</u>
+    <mark>mark</mark>
+    <del>deleted</del>
+
+    <!-- OL(Ordered List) & UL(Unordered List) -->
+    <ol>
+      <li>apple</li>
+      <li>mangga</li>
+    </ol>
+
+    <ul>
+      <li>mangga</li>
+      <li>semangka</li>
+    </ul>
+
+    <!-- table -->
+    <!-- 
+    -> thead itu di dalemnya <th>
+    -> tbody itu dalemnya ada buuat baris baru dulu <tr>, lalu buat isi data nya/colum nya <td>
+    -> colspan (menggabungkan columns berati kesamping) ada rowspan (menggabungkan baris berati kebawah)
+    -->
+    <table>
+      <thead>
+        <th>No</th>
+        <th>Nama</th>
+        <th>alamat</th>
+        <th>action</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Jovin</td>
+          <td>Depok</td>
+          <td>
+            <button>deleted</button>
+          </td>
+        </tr>
+
+        <tr>
+          <td rowspan="2">2</td>
+          <td>Riky</td>
+          <td>Jakarta</td>
+          <td>
+            <button>deleted</button>
+          </td>
+        </tr>
+
+        <tr>
+          <!-- <td>3</td> -->
+          <td>Riky</td>
+          <td>Jakarta</td>
+          <td>
+            <button>deleted</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Anchor tags -->
+    <!-- dibagi 2 ada absoult (mengarah ke link web) dan relative (mengarah ke website sendri/file sendiri) -->
+    <a href="https://www.google.com">link google</a>
+    <a href="intro.html">go to profile page</a>
+
+    <!-- image -->
+
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPQI58Hzi5GE899ZaGXGkfqjYkGDBP3k8gAkj4YEVMjw&s"
+      height="150px"
+      width="150px"
+      alt="ini gambar kucing"
+    />
+
+    <form action="">
+      <input type="text" name="" id="" placeholder="input text" />
+      <input type="email" name="" id="" placeholder="input emial" />
+      <input type="radio" name="" id="" />male
+      <input type="radio" name="" id="" checked/>female
+
+      <select name="" id="">
+        <option value="">jakarta</option>
+        <option value="">depok</option>
+        <option value="">tanggerang selatan</option>
+      </select>
+    </form>
+  </body>
+</html>
+

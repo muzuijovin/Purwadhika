@@ -38,7 +38,7 @@ function printOut() {
   return { templateMassage, nama };
   // return [templateMassage, nama];
 }
-
+ // destructuring
 const { templateMassage, nama } = printOut();
 console.log(templateMassage);
 console.log(nama);
