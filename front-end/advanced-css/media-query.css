@@ -1,0 +1,22 @@
+/* mobile first approach, ini lebih digunakan untuk responsif, karena ketika buka di mobile ga berat. */
+
+/* mobile */
+@media (max-width:769px) {
+  h1 {
+    color: aqua;
+  }
+}
+
+/* tablet */
+@media (min-width: 769px) {
+  h1 {
+    color: antiquewhite;
+  }
+}
+
+/* desktop */
+@media (min-width: 1024px) {
+  h1 {
+    color: blue;
+  }
+}

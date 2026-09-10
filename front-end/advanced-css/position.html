@@ -1,11 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>position</title>
+    <link rel="stylesheet" href="position.css" />
+  </head>
+  <body>
+    <!-- relative
+     => element yang berada di alur normal dokumen, tetapi bisa di geser relative terhadap posisi aslinya
+
+      * Karakteristik
+        > masih mempertahankan ruang aslinya;
+        > bisa menggunakan top,bottom, left, right
+        > sering dijadikan referensiparents untuk position absolut
+     -->
+
+    <div id="container">
+      <div>box01</div>
+      <div>box02</div>
+      <div>box03</div>
+    </div>
+
+    <!-- Absolut
+    -> element yang keluar dari posisi normal dan diposisikan relative terhadap parent terdekat yang memiliki position selain static.
+    
+      * Karakteristik
+        > tidak mempertaankan ruang aslinya (keluar dari normal flow/parent tertuju pada viewport)
+        > bisa menggunakan top,bottom, left, right
+        > jika ada parent berposition non static, relative -> body
+    -->
+    
+    <div id="wrapper">
+      <div>box01</div>
+      <div>box02</div>
+      <div>box03</div>
+    </div>
+
+    <!-- Fixed
+    -> element diposisikan relative terhadap viewport
+    
+      *Karakteristik
+        >tidak terpengaruh scrol
+        >selalu berada di posisi yang sama di layar
+        > keluar dari normal flow
+        > biasanya diperuntukkan untuk navbar
+    -->
+
+    <nav id="navbar"></nav>
+  </body>
 </html>

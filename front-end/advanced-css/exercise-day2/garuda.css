@@ -1,0 +1,196 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: #b91f30;
+  height: 35px;
+  color: aliceblue;
+}
+
+#banner-catalog {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 100vh;
+  gap: 20px;
+  padding: 0px 25px;
+  margin-top: 20px;
+}
+
+#banner-catalog > div {
+  background-color: red;
+  border-radius: 15px;
+}
+
+#banner-catalog > div:nth-child(1) {
+  grid-column: 1/4;
+}
+
+#catalog-main {
+  position: relative;
+  background-image: url("https://assets.goal.com/images/v3/blt6f451ca957db328c/Indonesia1.jpg?auto=webp&format=pjpg&width=3840&quality=60");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+#catalog-main > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+  position: absolute;
+  bottom: 40%;
+  left: 2%;
+  z-index: 2;
+}
+
+#button1 {
+  background-color: red;
+  color: wheat;
+  font-weight: medium;
+  width: 50%;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+}
+
+#opacity1 {
+  background-color: black;
+  opacity: 30%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+#catalog-produk1 {
+  position: relative;
+  background-image: url("https://cdn0-production-images-kly.akamaized.net/6I9mQwZE8xKjLuqd9sMuuncr7VI=/0x34:1264x746/800x450/filters:quality(75):strip_icc():format(webp):watermark(kly-media-production/assets/images/watermarks/bola/watermark-color-landscape-new.png,725,20,0)/kly-media-production/medias/5540760/original/058441900_1774811482-Gemini_Generated_Image_96c2f296c2f296c2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+#catalog-produk1 > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+  position: absolute;
+  bottom: 40%;
+  left: 2%;
+  z-index: 2;
+}
+
+#button2 {
+  background-color: red;
+  color: wheat;
+  font-weight: medium;
+  width: 50%;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+}
+
+#opacity2 {
+  background-color: black;
+  opacity: 30%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+#catalog-produk2 {
+  position: relative;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlxs7HUdvifhcYIjhsHKWygiRZ6IlnpG7_F2xUlrb6bA&s=10");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+#catalog-produk2 > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+  position: absolute;
+  bottom: 40%;
+  left: 2%;
+  z-index: 2;
+}
+
+#button3 {
+  background-color: red;
+  color: wheat;
+  font-weight: medium;
+  width: 50%;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+}
+
+#opacity3 {
+  background-color: black;
+  opacity: 30%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+#catalog-produk3 {
+  position: relative;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8w0fKGdIC9ibMYxh7SioD3DW3eMJ9XNxZ5KUrZi1Y8w&s=10");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+
+#catalog-produk3 > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+  position: absolute;
+  bottom: 40%;
+  left: 2%;
+  z-index: 2;
+}
+
+#button4 {
+  background-color: red;
+  color: wheat;
+  font-weight: medium;
+  width: 50%;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+}
+
+#opacity4 {
+  background-color: black;
+  opacity: 30%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+h1 {
+  color: azure;
+}
+
+@media (max-width: 769px) {
+  #banner-catalog {
+    grid-template-columns: 1fr;
+  }
+
+  #banner-catalog > div:nth-child(1) {
+  grid-column: 1/2;
+  }
+
+}
