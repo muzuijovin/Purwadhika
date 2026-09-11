@@ -1,0 +1,46 @@
+@import url(src/font-library.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f0f0;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: blueviolet;
+  margin-bottom: 0.1px;
+  height: 64px;
+}
+
+nav > div {
+  background-color: #f0f0f0;
+}
+
+#icon-tokped {
+  width:150px;
+  height: 40px;
+  object-fit: contain;
+  flex-shrink: 0;
+  top: 40%;
+}
+
+nav > h2 {
+  color: #080808;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+
+#searching-input {
+  display: flex;
+  position: relative;
+}
+
+
+
+
+
