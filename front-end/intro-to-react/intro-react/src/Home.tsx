@@ -48,6 +48,12 @@ export default function Home() {
               <li>
                 <a href="/register">Register</a>
               </li>
+              <li>
+                <a href="/useref">useRef</a>
+              </li>
+              <li>
+                <a href="/usestate">useState</a>
+              </li>
             </ul>
           </div>
         </div>
